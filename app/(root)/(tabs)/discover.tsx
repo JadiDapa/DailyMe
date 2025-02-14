@@ -8,13 +8,13 @@ import DiscoverHeader from "@/components/tabs/discover/DiscoverHeader";
 
 export default function Discover() {
   return (
-    <ScrollView>
+    <ScrollView className="">
       <DiscoverHeader />
       <SuggestedHabits />
       <HabitClubs />
       <Challenges />
-      <MeetFriends />
       <Learning />
+      <MeetFriends />
     </ScrollView>
   );
 }

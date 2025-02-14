@@ -29,7 +29,7 @@ export default function SignIn() {
   }
 
   return (
-    <SafeAreaView className="flex-1 bg-primary">
+    <SafeAreaView className="flex-1 bg-primary-500">
       <StatusBar backgroundColor="#3843FF" />
 
       <View className="p-4 py-3">
@@ -38,15 +38,15 @@ export default function SignIn() {
 
       <View className="flex-1 p-6 pt-12 mt-6 bg-white rounded-t-[28px]">
         <View className="w-full ">
-          <Text className="pt-1 text-5xl text-primary font-cereal-medium">
+          <Text className="pt-1 text-5xl text-primary-500 font-cereal-medium">
             Login
           </Text>
-          <Text className="mt-1 text-primary font-cereal-medium">
+          <Text className="mt-1 text-primary-500 font-cereal-medium">
             Please Sign In to Continue
           </Text>
         </View>
         <View className="gap-4 mt-6">
-          <View className="relative flex flex-row gap-4 overflow-hidden rounded-full bg-primary/10 ">
+          <View className="relative flex flex-row gap-4 overflow-hidden rounded-full bg-primary-500/10 ">
             <Image
               source={mailIcon}
               className="absolute -translate-y-1/2 size-6 left-6 top-1/2"
@@ -57,7 +57,7 @@ export default function SignIn() {
               className="w-full h-full text-lg font-cereal ps-16"
             />
           </View>
-          <View className="flex flex-row gap-4 overflow-hidden rounded-full bg-primary/10 ">
+          <View className="flex flex-row gap-4 overflow-hidden rounded-full bg-primary-500/10 ">
             <Image
               source={lockIcon}
               className="absolute -translate-y-1/2 size-6 left-6 top-1/2"
@@ -74,7 +74,7 @@ export default function SignIn() {
             />
           </View>
           <View className="flex-row items-center justify-between ">
-            <Text className="pl-4 text-primary font-cereal-medium">
+            <Text className="pl-4 text-primary-500 font-cereal-medium">
               Remind Me Later
             </Text>
             <Switch className="h-10 " />
@@ -84,7 +84,7 @@ export default function SignIn() {
         <View>
           <Pressable
             onPress={handleSignIn}
-            className="flex flex-row justify-center gap-2 p-4 mt-6 rounded-full bg-primary"
+            className="flex flex-row justify-center gap-2 p-4 mt-6 rounded-full bg-primary-500"
           >
             <Text className="text-xl text-white font-cereal-medium">
               Sign In
@@ -96,7 +96,9 @@ export default function SignIn() {
               Dont have account?{" "}
             </Text>
             <Pressable onPress={() => router.push("/auth/sign-up")}>
-              <Text className=" text-primary font-cereal-bold">Sign Up</Text>
+              <Text className=" text-primary-500 font-cereal-bold">
+                Sign Up
+              </Text>
             </Pressable>
           </View>
         </View>

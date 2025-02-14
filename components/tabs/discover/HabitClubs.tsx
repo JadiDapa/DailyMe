@@ -8,7 +8,7 @@ export default function HabitClubs() {
       <View className="flex-row justify-between px-4">
         <Text className="text-lg font-cereal-medium">Habit Clubs</Text>
         <Pressable>
-          <Text className="text-primary font-cereal-medium">VIEW ALL</Text>
+          <Text className="text-primary-500 font-cereal-medium">VIEW ALL</Text>
         </Pressable>
       </View>
 
@@ -17,8 +17,10 @@ export default function HabitClubs() {
         horizontal
         className="mt-2 ps-4"
         showsHorizontalScrollIndicator={false}
-        keyExtractor={(item) => item.toString()}
-        renderItem={({ item: habit }) => <ClubCard habit={habit} />}
+        keyExtractor={(item) => item.name}
+        renderItem={({ item: habit }) => (
+          <ClubCard key={habit.name} habit={habit} />
+        )}
       />
     </View>
   );

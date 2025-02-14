@@ -8,16 +8,16 @@ export default function SuggestedHabits() {
       <View className="flex-row justify-between px-4">
         <Text className="text-lg font-cereal-medium">Suggested For You</Text>
         <Pressable>
-          <Text className="text-primary font-cereal-medium">VIEW ALL</Text>
+          <Text className="text-primary-500 font-cereal-medium">VIEW ALL</Text>
         </Pressable>
       </View>
 
       <FlatList
-        data={habits.reverse()}
+        data={[...habits].reverse()} // Avoid mutating the original array
         horizontal
         className="mt-2 ps-4"
         showsHorizontalScrollIndicator={false}
-        keyExtractor={(item) => item.toString()}
+        keyExtractor={(item) => item.name}
         renderItem={({ item: habit }) => <SuggestedHabitCard habit={habit} />}
       />
     </View>

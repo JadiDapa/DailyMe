@@ -19,7 +19,7 @@ export default function HabitCard({ habit }: HabitCardProps) {
         <Text className="mt-2 text-xl text font-cereal-medium">
           {habit.name}
         </Text>
-        <View className="flex-row gap-2 px-2.5 py-1 self-start rounded-full bg-primary/50 mt-2">
+        <View className="flex-row gap-2 px-2.5 py-1 self-start rounded-full bg-primary-500/50 mt-2">
           <Text className="text-sm text-white">📅 7 Days</Text>
         </View>
       </View>

@@ -43,7 +43,7 @@ export default function SignUp() {
   }
 
   return (
-    <SafeAreaView className="flex-1 bg-primary">
+    <SafeAreaView className="flex-1 bg-primary-500">
       <StatusBar backgroundColor="#3843FF" />
 
       <View className="p-4 py-3">
@@ -52,15 +52,15 @@ export default function SignUp() {
 
       <View className="flex-1 p-6 pt-12 mt-6 bg-white rounded-t-[28px]">
         <View className="w-full ">
-          <Text className="pt-1 text-5xl text-primary font-cereal-medium">
+          <Text className="pt-1 text-5xl text-primary-500 font-cereal-medium">
             Register
           </Text>
-          <Text className="mt-1 text-primary font-cereal-medium">
+          <Text className="mt-1 text-primary-500 font-cereal-medium">
             Please Sign Up to Login
           </Text>
         </View>
         <View className="gap-4 mt-6">
-          <View className="relative flex flex-row gap-4 overflow-hidden rounded-full bg-primary/10 ">
+          <View className="relative flex flex-row gap-4 overflow-hidden rounded-full bg-primary-500/10 ">
             <Image
               source={mailIcon}
               className="absolute -translate-y-1/2 size-6 left-6 top-1/2"
@@ -71,7 +71,7 @@ export default function SignUp() {
               className="w-full h-full text-lg font-cereal ps-16"
             />
           </View>
-          <View className="relative flex flex-row gap-4 overflow-hidden rounded-full bg-primary/10 ">
+          <View className="relative flex flex-row gap-4 overflow-hidden rounded-full bg-primary-500/10 ">
             <Image
               source={mailIcon}
               className="absolute -translate-y-1/2 size-6 left-6 top-1/2"
@@ -82,7 +82,7 @@ export default function SignUp() {
               className="w-full h-full text-lg font-cereal ps-16"
             />
           </View>
-          <View className="flex flex-row gap-4 overflow-hidden rounded-full bg-primary/10 ">
+          <View className="flex flex-row gap-4 overflow-hidden rounded-full bg-primary-500/10 ">
             <Image
               source={lockIcon}
               className="absolute -translate-y-1/2 size-6 left-6 top-1/2"
@@ -103,7 +103,7 @@ export default function SignUp() {
         <View>
           <Pressable
             onPress={handleSignUp}
-            className="flex flex-row justify-center gap-2 p-4 mt-6 rounded-full bg-primary"
+            className="flex flex-row justify-center gap-2 p-4 mt-6 rounded-full bg-primary-500"
           >
             <Text className="text-xl text-white font-cereal-medium">
               Sign Up
@@ -115,7 +115,9 @@ export default function SignUp() {
               Dont have account?{" "}
             </Text>
             <Pressable onPress={() => router.push("/auth/sign-in")}>
-              <Text className=" text-primary font-cereal-bold">Sign In</Text>
+              <Text className=" text-primary-500 font-cereal-bold">
+                Sign In
+              </Text>
             </Pressable>
           </View>
         </View>

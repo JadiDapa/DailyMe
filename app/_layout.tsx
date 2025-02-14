@@ -1,4 +1,6 @@
 import "./global.css";
+import "@/app\\global.css";
+import { GluestackUIProvider } from "@/components/ui/gluestack-ui-provider";
 import { useFonts } from "expo-font";
 import { SplashScreen, Stack } from "expo-router";
 import { useEffect } from "react";
@@ -23,5 +25,9 @@ export default function RootLayout() {
   if (!fontsLoaded) {
     return null;
   }
-  return <Stack screenOptions={{ headerShown: false }} />;
+  return (
+    <GluestackUIProvider mode="light">
+      <Stack screenOptions={{ headerShown: false }} />
+    </GluestackUIProvider>
+  );
 }

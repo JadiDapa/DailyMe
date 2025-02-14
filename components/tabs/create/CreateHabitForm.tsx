@@ -39,7 +39,7 @@ export default function CreateHabitForm() {
         <Text className="font-cereal-medium">ICON & COLOR</Text>
         <View className="flex-row gap-4 mt-2">
           <View className="flex-row flex-1 gap-4 p-4 bg-white shadow-md rounded-xl">
-            <View className="items-center justify-center bg-primary/20 rounded-xl size-12">
+            <View className="items-center justify-center bg-primary-500/20 rounded-xl size-12">
               <Text>🚶</Text>
             </View>
             <View>
@@ -48,7 +48,7 @@ export default function CreateHabitForm() {
             </View>
           </View>
           <View className="flex-row flex-1 gap-4 p-4 bg-white shadow-md rounded-xl">
-            <View className="items-center justify-center overflow-hidden bg-primary/20 rounded-xl size-12">
+            <View className="items-center justify-center overflow-hidden bg-primary-500/20 rounded-xl size-12">
               <Image source={randomColor} className="w-full h-full" />
             </View>
             <View>
@@ -86,13 +86,13 @@ export default function CreateHabitForm() {
       <View className="relative mt-4">
         <Text className="font-cereal-medium">DURATION</Text>
         <View className="flex flex-row gap-2 mt-2 ">
-          <View className="flex-1 p-4 shadow-md rounded-xl bg-primary/80">
+          <View className="flex-1 p-4 shadow-md rounded-xl bg-primary-500/80">
             <Text className="text-center text-white font-cereal">A Day</Text>
           </View>
-          <View className="flex-1 p-4 bg-white shadow-md rounded-xl text-primary">
+          <View className="flex-1 p-4 bg-white shadow-md rounded-xl text-primary-500">
             <Text className="text-center font-cereal">7 Days</Text>
           </View>
-          <View className="flex-1 p-4 bg-white shadow-md rounded-xl text-primary">
+          <View className="flex-1 p-4 bg-white shadow-md rounded-xl text-primary-500">
             <Text className="text-center font-cereal">Custom</Text>
           </View>
         </View>
@@ -103,12 +103,12 @@ export default function CreateHabitForm() {
           data={days}
           horizontal
           showsHorizontalScrollIndicator={false}
-          keyExtractor={(item) => item.toString()}
+          keyExtractor={(item) => item.day}
           renderItem={({ item }) => (
             <Pressable
               key={item.day}
               className={`items-center justify-between w-14 h-20 py-2 mx-1   rounded-xl ${
-                item.isChecked ? "bg-primary/30" : "bg-white"
+                item.isChecked ? "bg-primary-500/30" : "bg-white"
               }`}
             >
               <Text className="text-lg fontext-center font-cereal">
@@ -123,7 +123,7 @@ export default function CreateHabitForm() {
       </View>
 
       <Pressable
-        className="w-full py-4 mt-6 rounded-full bg-primary"
+        className="w-full py-4 mt-6 rounded-full bg-primary-500"
         onPress={() => {}}
       >
         <Text className="text-xl text-center text-white font-cereal-bold">

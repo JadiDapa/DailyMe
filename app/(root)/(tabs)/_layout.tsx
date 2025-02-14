@@ -26,7 +26,9 @@ const TabIcon = ({
     />
     <Text
       className={`${
-        focused ? "text-primary font-cereal-medium" : "text-black font-cereal"
+        focused
+          ? "text-primary-500 font-cereal-medium"
+          : "text-black font-cereal"
       } text-xs w-full text-center mt-1`}
     >
       {title}
@@ -44,7 +46,7 @@ const MainTabIcon = ({
   title: string;
 }) => (
   <View
-    className="items-center justify-center rounded-full bg-primary"
+    className="items-center justify-center rounded-full bg-primary-500"
     style={{
       width: 58,
       height: 58,

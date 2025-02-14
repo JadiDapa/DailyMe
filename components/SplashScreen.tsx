@@ -3,7 +3,7 @@ import { gradient, circle, logo } from "@/constant/Images";
 
 export default function SplashScreen() {
   return (
-    <SafeAreaView className="relative flex items-center justify-center flex-1 bg-primary">
+    <SafeAreaView className="relative flex items-center justify-center flex-1 bg-primary-500">
       <Image source={gradient} className="absolute -top-12 -left-12 size-96" />
       <Image
         source={gradient}

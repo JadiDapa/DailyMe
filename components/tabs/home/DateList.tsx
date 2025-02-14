@@ -45,7 +45,7 @@ export default function DateList() {
           key={item}
           onPress={() => setSelectedDate(item)}
           className={`items-center justify-center border-2 mt-4 h-20 mx-1.5 bg-white w-14 rounded-xl ${
-            selectedDate === item ? "border-primary" : "border-slate-200"
+            selectedDate === item ? "border-primary-300" : "border-slate-200"
           }`}
         >
           <Text className="text-2xl font-cereal-medium">{item}</Text>

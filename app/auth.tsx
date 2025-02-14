@@ -15,7 +15,7 @@ export default function Auth() {
   const router = useRouter();
 
   return (
-    <SafeAreaView className="relative flex flex-1 p-6 bg-primary">
+    <SafeAreaView className="relative flex flex-1 p-6 bg-primary-500">
       <Image source={gradient} className="absolute -top-12 -left-12 size-96" />
       <Image
         source={gradient}

@@ -15,18 +15,18 @@ export default function HomeHeader() {
       </View>
       <View className="flex-row items-center justify-between mt-4">
         <View>
-          <Text className="text-2xl text-primary font-cereal-medium">
+          <Text className="text-2xl text-primary-500 font-cereal-medium">
             Hi, Daffa
           </Text>
           <Text className="font-cereal">Let's make habits together!</Text>
         </View>
-        <View className="items-center justify-center rounded-full bg-primary size-12 ">
+        <View className="items-center justify-center rounded-full bg-primary-500 size-12 ">
           <Text className="text-white font-cereal">DP</Text>
         </View>
       </View>
       <View className="flex flex-row p-0.5 mt-4 rounded-full bg-slate-300">
         <View className="flex-1 py-1.5 bg-white rounded-full">
-          <Text className="text-center font-cereal-medium text-primary">
+          <Text className="text-center font-cereal-medium text-primary-500">
             Today
           </Text>
         </View>

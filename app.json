@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "autodemy",
-    "slug": "autodemy",
+    "name": "daiha",
+    "slug": "daiha",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
@@ -19,7 +19,7 @@
     },
     "web": {
       "bundler": "metro",
-      "output": "static",
+      "output": "single",
       "favicon": "./assets/images/favicon.png"
     },
     "plugins": [
@@ -32,8 +32,22 @@
           "resizeMode": "contain",
           "backgroundColor": "#ffffff"
         }
+      ],
+      [
+        "expo-font",
+        {
+          "fonts": [
+            "./assets/fonts/AirbnbCereal_Light.otf",
+            "./assets/fonts/AirbnbCereal_Regular.otf",
+            "./assets/fonts/AirbnbCereal_Medium.otf",
+            "./assets/fonts/AirbnbCereal_Bold.otf",
+            "./assets/fonts/AirbnbCereal_ExtraBold.otf",
+            "./assets/fonts/AirbnbCereal_Black.otf"
+          ]
+        }
       ]
     ],
+
     "experiments": {
       "typedRoutes": true
     }
